@@ -137,6 +137,91 @@ footer a[href="#"] {
     font-weight: bold;
 }
 
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+thead th {
+    padding: 0.8rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f7e7;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f1fdf1;
+}
+
+tbody tr:hover {
+    background-color: #d0e8d0;
+}
+
+td, th {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Responsive Table Design */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    td {
+        padding: 1rem;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 1rem;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     header nav ul {
@@ -158,4 +243,74 @@ footer a[href="#"] {
     h3 {
         font-size: 1.2rem;
     }
+}
+
+/* Contact Form Styling */
+section form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+section form label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    color: #333;
+}
+
+section form input[type="text"],
+section form input[type="email"],
+section form input[type="tel"],
+section form input[type="date"],
+section form select {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+section form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+section form button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section form button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for `httpbin` Output Section */
+section h2 {
+    color: #333;
+    margin-top: 2rem;
+}
+
+section ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    color: #555;
+    margin-top: 1rem;
 }

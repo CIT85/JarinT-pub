@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jarin Tisha">
+    <meta name="description" content="About page with information on course purpose and ChatGPT for research.">
+    <title>About - Course Journey and ChatGPT Research</title>
+    <link rel="icon" href="./img/icons8-chatgpt-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>About This Course</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <article>
+            <section>
+                <h2>Why I’m Taking This Course</h2>
+                <figure>
+                    <img src="./img/course_7105_image.png" alt="Studying HTML coding" width="500" height="400">
+                    <figcaption>Learning HTML and CSS for Web Development.</figcaption>
+                </figure>
+                <p>I am taking this course to improve my skills in web development, particularly in mastering HTML, CSS, and JavaScript. These foundational skills are crucial for creating engaging, accessible, and user-friendly websites, which aligns with my career goals.</p>
+                <p>This course also provides hands-on experience that is not only theoretical but also practical, allowing me to apply what I learn immediately. By the end of the course, I aim to be confident in building interactive and responsive websites from scratch, which is an essential skill set in today’s digital world.</p>
+                <p>In addition, the course’s structured approach to teaching both beginner and advanced concepts provides a roadmap for my long-term development in web design. I’m excited to explore different areas, such as forms, animations, and API integrations, which will open up new opportunities for creativity and functionality in web projects.</p>
+            </section>
+
+            <section>
+                <h2>Using ChatGPT for Research</h2>
+                <p>Using ChatGPT has significantly enhanced my research process for this project on small business marketing. The ability to quickly access diverse information and receive suggestions on structuring content has helped me approach research in a more organized and efficient manner.</p>
+                <p>ChatGPT provides a unique advantage when it comes to brainstorming. For instance, it helped me outline various strategies that small businesses can use to improve their online presence. This includes using SEO, social media marketing, and targeted content strategies that can engage and convert potential customers.</p>
+                <p>Additionally, ChatGPT’s ability to provide multiple perspectives on a single topic has expanded my understanding. For example, I’ve learned about the importance of local SEO, customer reviews, and creating a brand narrative that resonates with local communities, which are all effective approaches for small businesses with limited budgets. Overall, using ChatGPT has streamlined my research process and enriched the content I'm developing.</p>
+            </section>
+
+            <!-- New Section for Contact Form -->
+            <section>
+                <h2>Contact Form</h2>
+                <form action="https://httpbin.org/post" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                    </select><br><br>
+
+                    <label for="subscribe">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Section to Discuss httpbin Output -->
+            <section>
+                <h2>Understanding `httpbin` Output</h2>
+                <p>Submitting this form sends the data to <a href="https://httpbin.org/post">httpbin.org/post</a>, a tool designed for testing HTTP requests. When the form is submitted, `httpbin` returns a JSON response that shows all the data entered in the form. This JSON output includes various details:</p>
+                <ul>
+                    <li><strong>Form Data:</strong> Shows each field name and its value exactly as entered in the form.</li>
+                    <li><strong>Headers:</strong> Contains metadata about the request, such as the content type and user agent.</li>
+                    <li><strong>Origin:</strong> Displays the IP address of the request source, which can be helpful for server-side tracking.</li>
+                </ul>
+                <p>This allows us to view how form data is transmitted and confirms that each field is correctly captured. It’s a helpful way to ensure our form inputs are working as intended before connecting to a live server.</p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2024 <a href="about.html">Jarin Tisha</a></p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
+</body>
+
+</html>
